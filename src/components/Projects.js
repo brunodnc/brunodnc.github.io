@@ -24,11 +24,15 @@ export const Projects = () => {
       }, []);
       setStacks(_stacks);
     }
-  },[projects])
+  },[projects]);
 
-  useEffect(() => {
-
-  }, filters)
+  useEffect(() => { //filters projects
+    if (filters === []) {
+      setFilteredProjects(projects);
+    } else{
+      setFilteredProjects(filteredProjects.filter((p) => !p.stacks.includes(filters[-1])));
+    }
+  }, [filters]);
 
     return (
     <article id="projects">
@@ -46,6 +50,13 @@ export const Projects = () => {
             {s}
           </button>
         ))}
+        <button
+          type="button"
+          onClick={() => {
+            setFilters([]);
+          }}>
+          Clear
+        </button>
       </div>
       {filteredProjects.map((p) => (
         <section class="project-tile" key={p.id}>
