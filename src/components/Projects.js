@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-const projectsJSON = require('../data/projects.json'); // tem que usar o FileReader...
+const projects = require('../data/projects'); // tem que usar o FileReader...
 
 export const Projects = () => {
   const [projects, setProjects] = useState(false);
@@ -8,8 +8,8 @@ export const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState([]);
   
   useEffect(() => { //set projects on load
-    setProjects(projectsJSON.projects);
-    setFilteredProjects(projectsJSON.projects);
+    setProjects(projects.projects);
+    setFilteredProjects(projects.projects);
   }, []);
 
   useEffect(() => { // get stack list

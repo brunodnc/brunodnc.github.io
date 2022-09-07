@@ -1,4 +1,4 @@
-{
+const projects = {
     "projects": [
         {
             "id": 1,
@@ -150,4 +150,5 @@
         }
     ]
   }
-  
+
+export default projects;
