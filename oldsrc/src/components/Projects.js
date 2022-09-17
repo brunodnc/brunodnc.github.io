@@ -1,28 +1,24 @@
 import React, { useEffect, useState } from "react";
-import projects from '../data/projects';
+import projects from "../../../src/data/projects";
 
 export const Projects = () => {
   const [proj, setProjects] = useState(false);
-  const [filteredProjects, setFilteredProjects] = useState([]);
   const [stacks, setStacks] = useState([]);
   const [filters, setFilters] = useState([]);
-  
+  const [filteredProjects, setFilteredProjects] = useState([]);
   
   useEffect(() => { //set projects on load
     setProjects(projects.projects);
     setFilteredProjects(projects.projects);
-    console.log('rodou, fp é array vazio? ' + JSON.stringify(filteredProjects));
   }, []);
 
   useEffect(() => { // get stack list
     if (proj) {
       const _stacks = proj.reduce((prev, cur) => {
-        if (cur.stacks) {
-          for (const st of cur.stacks) {
-            if (!prev.includes(st)) {
-              prev.push(st);
-              };
-            };
+        for (let stack of cur.stacks) {
+          if (!prev.contains(stack)) {
+             prev.push(stack);
+          }
         }
         return prev;
       }, []);
@@ -32,21 +28,21 @@ export const Projects = () => {
 
   useEffect(() => { //filters projects
     if (filters === []) {
-      setFilteredProjects(projects);
+      setFilteredProjects(proj);
     } else{
       setFilteredProjects(filteredProjects.filter((p) => !p.stacks.includes(filters[-1])));
     }
   }, [filters]);
 
-    return (      
+    return (
     <article id="projects">
       <h2>Projects</h2>
-      <div className="filter-bar">
+      <div class="filter-bar">
         {stacks.map((s) => (
           <button 
             key={s}
             type="button"
-            className="filter-btn"
+            class="filter-btn"
             onClick={(e) => {
               setFilters([...filters, s])
             }}
@@ -59,11 +55,11 @@ export const Projects = () => {
           onClick={() => {
             setFilters([]);
           }}>
-          Clear
+           Filters
         </button>
       </div>
       {filteredProjects.map((p) => (
-        <section className="project-tile" key={p.id}>
+        <section class="project-tile" key={p.id}>
           <h3>{p.name}</h3>
           <p>{p.description}</p>
           <a href={p.link}>{ p.link.includes('github') ? 'Live Version' : 'Code' }</a>

@@ -30,6 +30,7 @@ nav {
   background-size: cover;
   z-index:2;
 }
+
 .navlist {
 display:flex;
 width: 33vw;
@@ -46,8 +47,12 @@ margin-top:1rem;
   text-decoration: none;
   color: black;
   padding-left:1rem;
-  transition: background-color 1s ease-in-out, border 1s ease-in-out, border-radius 1s ease-in-out, padding  1s ease-in-out;
-  
+  color: white;
+  text-shadow: 1px -0.5px greenyellow;
+}
+
+.navlist a:hover {
+  text-decoration: underline solid white 0.001px;
 }
 
 
@@ -71,48 +76,41 @@ h1 {
   font-size:3rem;
   text-shadow: 2px 2px greenyellow;
   border: transparent;
-  transition: background-color 1s ease-in-out, border 1s ease-in-out, border-radius 1s ease-in-out, padding  1s ease-in-out;
+  color: white;
 }
 
 
 
 #welcome-section p {
   text-shadow: 1px 1px greenyellow;
+  color: white;
   margin-top: 1rem;
   text-align: center;
   border: transparent;
-  transition: background-color 2s ease-in-out, border 2s ease-in-out, border-radius 2s ease-in-out, padding  2s ease-in-out;
 }
 
 main {
-  
   /* esse margin foi uma mão na roda viu... source: freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/ */
   margin: 0 auto;
   max-width: 1200px;
-  
-}
-
-h1:hover, #welcome-section p:hover, .navlist a:hover {
-  background-color:greenyellow;
-  border: 0.2rem red solid;
-  border-radius: 50%;
-  padding: 2rem;
 }
 
 #projects {
   display: flex;
   flex-direction:column;
-  background: linear-gradient(35deg, greenyellow, #FFCCCC);
+  /* background: linear-gradient(35deg, greenyellow, #FFCCCC); */
   align-items: center;
-  
 
 }
 
 h2 {
   font-family: monospace;
-  font-size:3rem;
+  font-size:2rem;
   text-align: center;
+  font-style: normal;
+  font-weight: lighter;
   text-shadow: 2px 2px greenyellow;
+  color: white;
 }
 
 
@@ -141,68 +139,42 @@ h2 {
 
 }
 
-
-.project-tile img {
-  height: 100%;
-  width:100%;
-  border:red solid 0.3rem;
-}
-
-#whoami {
+#about {
   padding: 2rem;
-  list-style-position: inside;
-  background: linear-gradient(-35deg, greenyellow, #FFCCCC);
-  text-shadow: 2px 2px greenyellow;
+  font-style: monospace;
   font-family: monospace;
 }
 
-#whoami h2 {
+#about h2 {
   margin-bottom: 1rem;
 }
 
-#whoami p {
+#about p {
   font-family: monospace;
   padding: 1rem;
-  color: red;
+  color: white;
   font-weight: bolder;
   text-align: justify;
+  text-shadow: 0.7px 0.5px black;
+  font-weight: 300;
+  width: 500px;
+  margin: 0 auto;
 }
 
-#whoami h3 {
+#about p a {
+  text-decoration: none;
+  color: greenyellow;
+  font-weight: bolder;
+  text-shadow: 1px 1px white;
+}
+
+#about p a:hover {
+  text-decoration: underline solid salmon 0.001px;
+}
+
+#about h3 {
   font-size: 2rem;
   padding: 2rem;
-}
-
-#whoami li {
-  padding: 0.2rem;
-  text-shadow: 2px 2px greenyellow;
-  color: red;
-  font-weight: bolder;
-  list-style: square inside;
-  font-family: monospace;
-  text-align: justify;
-}
-
-#whoami .img {
-  float: left;
-  display: block;
-  padding-right: 2rem;
-}
-
-#whoami .img2 {
-  float:right;
-  display:block;
-  padding-left: 2rem;
-}
-
-#whoami img {
-  width: 30vh;
-  padding-bottom: 2rem;
-  display: block;
-}
-
-#whoami #fav {
-  position: relative;
 }
 
 footer {
@@ -227,27 +199,13 @@ footer a{
   text-shadow: 1px 1px greenyellow;
   text-align: center;
   border: transparent;
-  transition: background-color 2s ease-in-out, border 2s ease-in-out, border-radius 2s ease-in-out, padding  2s ease-in-out;
   white-space: nowrap;
   margin-top: 0.5rem;
-  
-
-}
-footer a:hover{
-  background-color:greenyellow;
-  border: 0.2rem red solid;
-  border-radius: 50%;
-  padding: 0 47%;
 }
 
 
 footer h2 {
   padding-top:0;
-  transition: margin-top 2s ease-in-out;
-}
-
-footer h2:hover {
-  margin-top: 2rem;
 }
 
 @media (max-width: 1000px) {
@@ -274,12 +232,3 @@ footer h2:hover {
       float:left;
   }
 }
-
-@media (min-width)
-
-@media (prefers-reduced-motion) {
-  * {
-      transition: none;       
-  }
-}
-

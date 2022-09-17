@@ -1,5 +1,4 @@
-export default
-{
+const obj = {
     "exercises": [
         {
             "id": 1,
@@ -50,7 +49,7 @@ export default
             "link": "",
             "stack": []
         },
-
-
     ]
 }
+
+export default obj;
