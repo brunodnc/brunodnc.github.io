@@ -2,24 +2,23 @@ import React, { useEffect, useState } from "react";
 import projects from '../data/projects';
 
 export const Projects = () => {
-  const [proj, setProjects] = useState(false);
-  const [filteredProjects, setFilteredProjects] = useState([]);
+  const [proj, setProjects] = useState([]);
   const [stacks, setStacks] = useState([]);
   const [filters, setFilters] = useState([]);
   
+  let loaded = false;
   
   useEffect(() => { //set projects on load
     setProjects(projects.projects);
-    setFilteredProjects(projects.projects);
-    console.log('rodou, fp é array vazio? ' + JSON.stringify(filteredProjects));
+    loaded = true;
   }, []);
 
   useEffect(() => { // get stack list
-    if (proj) {
+    if (proj instanceof Array && proj.length !== 0) {
       const _stacks = proj.reduce((prev, cur) => {
         if (cur.stacks) {
           for (const st of cur.stacks) {
-            if (!prev.includes(st)) {
+            if (prev.indexOf(st) === -1) {
               prev.push(st);
               };
             };
@@ -32,9 +31,13 @@ export const Projects = () => {
 
   useEffect(() => { //filters projects
     if (filters === []) {
-      setFilteredProjects(projects);
-    } else{
-      setFilteredProjects(filteredProjects.filter((p) => !p.stacks.includes(filters[-1])));
+      setProjects(projects.projects);
+    }
+    if (proj instanceof Array && proj.length !== 0) {
+      const filteredProjects = filters.reduce((prev, cur) => {
+        return prev.filter((currentProject) => currentProject.stacks.indexOf(cur) !== -1)
+      }, proj);
+      setProjects(filteredProjects);
     }
   }, [filters]);
 
@@ -46,9 +49,14 @@ export const Projects = () => {
           <button 
             key={s}
             type="button"
+            id={s}
             className="filter-btn"
             onClick={(e) => {
-              setFilters([...filters, s])
+              if (filters.indexOf(e.target.id) === -1) {
+                setFilters([...filters, s])
+              } else {
+                setFilters(filters.filter((f) => f !== e.target.id));
+              }
             }}
           >
             {s}
@@ -56,21 +64,23 @@ export const Projects = () => {
         ))}
         <button
           type="button"
+          className='clear-btn'
           onClick={() => {
             setFilters([]);
           }}>
-          Clear
+          Clear Filters
         </button>
       </div>
-      {filteredProjects.map((p) => (
+      <div id='projects'>
+      {proj.map((p) => (
         <section className="project-tile" key={p.id}>
           <h3>{p.name}</h3>
           <p>{p.description}</p>
-          <a href={p.link}>{ p.link.includes('github') ? 'Live Version' : 'Code' }</a>
-          <ul>{p.stacks.map((s) => <li key={s}>{s}</li>)}</ul>
+          <a href={p.link}>{ p.link.includes('github') ? 'Code' : 'Live Version' }</a>
+          <ul>{p.stacks?.map((s) => <li key={s}>{s}</li>)}</ul>
         </section>
       ))}
-      <h2>Exercises</h2>
+      </div>
     </article>
   )
 }

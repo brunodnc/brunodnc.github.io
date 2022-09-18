@@ -11,7 +11,6 @@ export const About = () => {
       am a web developer looking for a myriad of opportunities.
       Opportunities for self development, for sharing, for caring, and for
       honest work.
-
       You can use this page as a bridge to access my <a href="#projects">Projects</a> and my <a href="https://github.com/brunodnc" target="_blank" rel="noreferrer">code</a>!
     </p>
   </article>
