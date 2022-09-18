@@ -1,17 +1,14 @@
 import React from "react";
+import {Linkedin, Github} from '@icons-pack/react-simple-icons'
 
 export const About = () => {
     return (
     <article id="about">
-    <h2>Who am I?</h2><div id="imgs">
-  </div>
+    <h2>About</h2>
     <p>
-      My name is <a href="https://www.linkedin.com/in/brunodnc/" target="_blank" rel="noreferrer">Bruno Domenico</a>. Who am I? This is a
-      portfolio page so this question <em>should</em> be easy to answer: I
-      am a web developer looking for a myriad of opportunities.
-      Opportunities for self development, for sharing, for caring, and for
-      honest work.
-      You can use this page as a bridge to access my <a href="#projects">Projects</a> and my <a href="https://github.com/brunodnc" target="_blank" rel="noreferrer">code</a>!
+      My name is <a href="https://www.linkedin.com/in/brunodnc/" target="_blank" rel="noreferrer">Bruno Domenico</a>. I am a web and software developer.
+      In the section above and at my <a href="https://github.com/brunodnc" target="_blank" rel="noreferrer"> GitHub Profile {< Github/>}</a> you can find my personal projects. 
+      Here is my <a href="https://www.linkedin.com/in/brunodnc/" target="_blank" rel="noreferrer">Linkedin Page {<Linkedin />}</a> where you can find out more about me and perhaps say hello =).
     </p>
   </article>
   )

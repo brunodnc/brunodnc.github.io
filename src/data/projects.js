@@ -40,35 +40,35 @@ const projects = {
             "name": "guess-the-color",
             "description": "A color guessing web game",
             "link": "https://codepen.io/brunodnc/pen/ZExwPWo",
-            "stacks": ["JS"]
+            "stacks": ["JavaScript"]
         },
         {
             "id": 7,
             "name": "front-end-online-store",
             "description": "The front-end of a store web application, it was a group project done in React",
             "link": "",
-            "stacks": ["JS", "React"]
+            "stacks": ["JavaScript", "React"]
         },
         {
             "id": 8,
             "name": "meme-generator",
-            "description": "A meme generator done in vanilla JS",
+            "description": "A meme generator done in vanilla JavaScript",
             "link": "",
-            "stacks": ["JS"]
+            "stacks": ["JavaScript"]
         },
         {
             "id": 9,
             "name": "mysterious-letter",
             "description": "An anonymous and mysterious letter made with maganize bits and cuts generator",
             "link": "https://codepen.io/brunodnc/pen/BarMbpp",
-            "stacks": ["JS"]
+            "stacks": ["JavaScript"]
         },
         {
             "id": 10,
             "name": "pixel-art",
             "description": "A minimalistic pixel art web application",
             "link": "https://codepen.io/brunodnc/pen/RwMvdpW",
-            "stacks": ["JS"]
+            "stacks": ["JavaScript"]
         },
     
         {
@@ -76,56 +76,56 @@ const projects = {
             "name": "css-style-text-editor",
             "description": "A fast and simple CSS style text editor",
             "link": "https://codepen.io/brunodnc/pen/XWEOGRy",
-            "stacks": ["JS"]
+            "stacks": ["JavaScript"]
         },
         {
             "id": 12,
             "name": "recipes-app",
             "description": "A meal and drinks recipes web application, it was a group project done by me, Gabriel Lima, Geisel Rocha, Heloísa Jacobi and Tamires Sousa",
             "link": "",
-            "stacks": ["JS", "React"]
+            "stacks": ["JavaScript", "React"]
         },
         {
             "id": 13,
             "name": "shopping-cart",
             "description": "A store web application that aimed to create a shopping cart experience from a front-end perspective consuming Mercado Livre's API",
             "link": "",
-            "stacks": ["JS", "Jest"]
+            "stacks": ["JavaScript", "Jest"]
         },
         {
             "id": 14,
             "name": "starwars-planets-search",
             "description": "This web application serves to render and organize the data from a Star Wars Planets API",
             "link": "",
-            "stacks": ["JS", "React"]
+            "stacks": ["JavaScript", "React"]
         },
         {
             "id": 15,
             "name": "task-list",
-            "description": "A simple and crude task list done in vanilla JS",
+            "description": "A simple and crude task list done in vanilla JavaScript",
             "link": "https://codepen.io/brunodnc/pen/wvmNOPe",
-            "stacks": ["JS"]
+            "stacks": ["JavaScript"]
         },
         {
             "id": 16,
             "name": "trivia-game",
             "description": "A trivia game done by me, Camila Geber, Carlos Daniel, Daniel Cavalcanti and Gabriela Menezes as a group project",
             "link": "",
-            "stacks": ["JS", "React"]
+            "stacks": ["JavaScript", "React"]
         },
         {
             "id": 17,
             "name": "Trybe-tunes",
             "description": "A music web application using iTunes's API",
             "link": "",
-            "stacks": ["JS", "React"]
+            "stacks": ["JavaScript", "React"]
         },
         {
             "id": 18,
             "name": "Trybewarts",
             "description": "A form application that registers students in Trybewarts's school of programming magic, this project was done by me and Caio Alves",
             "link": "",
-            "stacks": ["JS"]
+            "stacks": ["JavaScript"]
         },
         {
             "id": 19,

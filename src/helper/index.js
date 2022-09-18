@@ -2,7 +2,7 @@ import { Docker, Gnubash, Javascript, Jest, Mysql, Nodedotjs, Postgresql, ReactJ
 
 const generateIcon = (stack) => {
     switch (stack) {
-        case 'JS':
+        case 'JavaScript':
             return <Javascript />;
         case 'React':
             return <ReactJs />;

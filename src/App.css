@@ -21,6 +21,7 @@ nav {
   top:0;
   left:0;
   display:flex;
+  min-height: 3rem;
   width: 100vw;
   justify-content: center;
   background-image: url(https://images.unsplash.com/photo-1612416364638-753a3834455c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
@@ -33,25 +34,27 @@ nav {
 
 .navlist {
   display:flex;
-  width: 33vw;
+  width: 67vw;
+  min-width: 300px;
   justify-content:space-between;
   align-items:center;
-  margin-top:1rem;
 }
 
 .navlist a {
-  margin-right:1rem;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
-  color: black;
-  padding-left:1rem;
   color: white;
-  /* text-shadow: 1px -0.5px greenyellow; */
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  font-style: italic;
 }
 
 .navlist a:hover {
-  text-decoration: underline solid white 0.001px;
+  outline: 2px solid greenyellow;
+  color: greenyellow;
+  
 }
 
 
@@ -72,22 +75,17 @@ nav {
 h1 {
   font-family: monospace;
   font-size:3rem;
-  /* text-shadow: 2px 2px greenyellow; */
   border: transparent;
   color: white;
 }
 
-
-
 #welcome-section p {
-  /* text-shadow: 1px 1px greenyellow; */
   color: white;
   margin-top: 1rem;
   text-align: center;
 }
 
 main {
-  /* esse margin foi uma mão na roda viu... source: freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/ */
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -101,17 +99,28 @@ main {
 
 h2 {
   font-family: monospace;
-  font-size:4rem;
+  font-size:3rem;
   text-align: center;
   font-style: normal;
   /* text-shadow: 1px 1px greenyellow; */
   color: white;
   margin-top: 2rem;
+  padding-bottom: 2rem;
 }
+
+/* #projects h2:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+} */
 
 .filter-bar {
   display: flex;
+  min-width: 300px;
+  min-height: 30px;
   width: 50vw;
+  margin-bottom: 1rem;
+  
 }
 
 .filter-btn {
@@ -191,7 +200,6 @@ h2 {
 
 #about {
   padding: 2rem;
-  font-style: monospace;
   font-family: monospace;
 }
 
@@ -201,13 +209,10 @@ h2 {
 
 #about p {
   font-family: monospace;
+  line-height: 2rem;
   padding: 1rem;
   color: white;
-  font-weight: bolder;
   text-align: justify;
-  text-shadow: 0.7px 0.5px black;
-  font-weight: 300;
-  width: 500px;
   margin: 0 auto;
 }
 
@@ -215,70 +220,17 @@ h2 {
   text-decoration: none;
   color: greenyellow;
   font-weight: bolder;
-  text-shadow: 1px 1px white;
 }
 
 #about p a:hover {
   text-decoration: underline solid salmon 0.001px;
 }
 
-#about h3 {
-  font-size: 2rem;
-  padding: 2rem;
-}
-
 footer {
-bottom: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-height:100%;
-background-image: url(https://images.unsplash.com/photo-1612416364638-753a3834455c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
-background-attachment:fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-
-footer a{
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
-  color: black;
-  text-shadow: 1px 1px greenyellow;
-  text-align: center;
-  border: transparent;
-  white-space: nowrap;
-  margin-top: 0.5rem;
-}
-
-
-footer h2 {
-  padding-top:0;
-}
-
-@media (max-width: 1000px) {
-  .project-tile {
-      width: 70%;
-      height: 70%;
-  }
-  #whoami #fav {
-      position:relative;
-  }
-
-  #whoami .img {
-      float:none;
-  }
-
-  #whoami .img2 {
-      float:none;
-      padding-left: 0;
-      padding-right: 2rem;
-  }
-
-  #imgs {
-      display:block;
-      float:left;
-  }
+  color: white;
+  bottom: 0;
+  text-align: justify;
+  font-family: monospace;
+  font-size: 0.7rem;
+  margin: 0 3rem 0 3rem;
 }

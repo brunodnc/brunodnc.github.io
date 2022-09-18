@@ -19,9 +19,7 @@ function App() {
       <About />
     </main>
     <footer id="contact">
-      <h2>Contact</h2>
-      <a href="https://github.com/brunodnc" target="_blank" rel="noreferrer">Github Profile</a>
-      <a href="https://www.linkedin.com/in/brunodnc/">LinkedIn Profile</a>
+    <p>Thanks for your kind attention. This page was made using the React framework and is hosted on GitHub Pages,</p>
     </footer>
     </div>
   );
