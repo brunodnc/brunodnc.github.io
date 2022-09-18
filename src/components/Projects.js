@@ -2,44 +2,39 @@ import React, { useEffect, useState } from "react";
 import projects from '../data/projects';
 
 export const Projects = () => {
-  const [proj, setProjects] = useState([]);
+  const [filteredProjects, setFilteredProjects] = useState(projects.projects);
   const [stacks, setStacks] = useState([]);
   const [filters, setFilters] = useState([]);
-  
-  let loaded = false;
-  
-  useEffect(() => { //set projects on load
-    setProjects(projects.projects);
-    loaded = true;
-  }, []);
 
-  useEffect(() => { // get stack list
-    if (proj instanceof Array && proj.length !== 0) {
-      const _stacks = proj.reduce((prev, cur) => {
-        if (cur.stacks) {
-          for (const st of cur.stacks) {
-            if (prev.indexOf(st) === -1) {
-              prev.push(st);
-              };
-            };
-        }
-        return prev;
+  useEffect(function getStacksList() {
+      const projectStacks = filteredProjects.reduce((stackList, currentProject) => {
+        for (const st of currentProject.stacks) {
+          if (stackList.indexOf(st) === -1) {
+            stackList.push(st);
+          };
+        };
+  
+        return stackList;
       }, []);
-      setStacks(_stacks);
-    }
-  },[proj]);
+     setStacks(projectStacks);
+  },[filteredProjects]);
 
-  useEffect(() => { //filters projects
-    if (filters === []) {
-      setProjects(projects.projects);
+  useEffect(function filterProjectsByStack() {
+    if (!filters.length) {
+      setFilteredProjects(projects.projects);
+    } else {
+      const filteredProjects = projects.filter(project => {
+         for (const filter of filters) {
+            if (!project.stacks.includes(filter)) {
+              return false
+            }
+         }
+         return true
+      });
+      setFilteredProjects(filteredProjects)
     }
-    if (proj instanceof Array && proj.length !== 0) {
-      const filteredProjects = filters.reduce((prev, cur) => {
-        return prev.filter((currentProject) => currentProject.stacks.indexOf(cur) !== -1)
-      }, proj);
-      setProjects(filteredProjects);
-    }
-  }, [filters]);
+  }, [filters]);  
+
 
     return (      
     <article id="projects">
@@ -72,7 +67,7 @@ export const Projects = () => {
         </button>
       </div>
       <div id='projects'>
-      {proj.map((p) => (
+      {filteredProjects.map((p) => (
         <section className="project-tile" key={p.id}>
           <h3>{p.name}</h3>
           <p>{p.description}</p>
