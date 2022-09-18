@@ -1,4 +1,4 @@
-import { Docker, Gnubash, Javascript, Jest, Mysql, Nodedotjs, Postgresql, ReactJs } from '@icons-pack/react-simple-icons';
+import { Docker, Gnubash, Javascript, Jest, Mysql, Nodedotjs, Postgresql, ReactJs, DThreeDotjs, Markdown, Redux } from '@icons-pack/react-simple-icons';
 
 const generateIcon = (stack) => {
     switch (stack) {
@@ -14,10 +14,16 @@ const generateIcon = (stack) => {
             return <Gnubash />;
         case 'Jest':
             return <Jest />;
-        case 'MySql':
+        case 'MySQL':
             return <Mysql />;
         case 'PostgreSQL':
             return <Postgresql />;
+        case 'D3.js':
+            return <DThreeDotjs />;
+        case 'Markdown':
+            return <Markdown />;
+        case 'Redux':
+            return <Redux />;
         default:
             break;
     }
