@@ -32,12 +32,11 @@ nav {
 }
 
 .navlist {
-display:flex;
-width: 33vw;
-justify-content:space-between;
-align-items:center;
-margin-top:1rem;
-
+  display:flex;
+  width: 33vw;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:1rem;
 }
 
 .navlist a {
@@ -68,7 +67,6 @@ margin-top:1rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 h1 {
@@ -98,39 +96,50 @@ main {
 #projects {
   display: flex;
   flex-direction:column;
-  /* background: linear-gradient(35deg, greenyellow, #FFCCCC); */
   align-items: center;
 
 }
 
 h2 {
   font-family: monospace;
-  font-size:2rem;
+  font-size:3rem;
   text-align: center;
   font-style: normal;
-  font-weight: lighter;
-  text-shadow: 2px 2px greenyellow;
+  text-shadow: 1px 1px greenyellow;
   color: white;
 }
 
 
 .project-tile {
-  width: 35vw;
-  height: 35vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  margin-top:2rem;
-  margin-bottom:0.3rem;
+  background-color: transparent;
+  border: white 4px solid;
+  min-width: 300px;
+  min-height: 30px;
+  margin: 0.5rem;
+  font-family: monospace;
+  font-weight: bolder;
   }
 
+.project-tile summary {
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  border-bottom: white 4px solid;
+}
+
+.project-tile p {
+  color: white;
+}
+
 .project-tile a {
-  font-weight: normal;
-  font-style: normal;
   text-decoration: none;
-  color: black;
-  border-radius: 50%;
-  padding: 0.8rem;
+  color: greenyellow;
+  font-weight: bolder;
+  text-shadow: 1px 1px white;
+}
+
+.project-tile a:hover {
+  text-decoration: underline solid salmon 0.001px;
 }
 
 #about {

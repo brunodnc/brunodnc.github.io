@@ -69,12 +69,12 @@ export const Projects = () => {
       </div>
       <div id='projects'>
       {filteredProjects.map((p) => (
-        <section className="project-tile" key={p.id}>
-          <h3>{p.name}</h3>
+        <details className="project-tile" key={p.id}>
+          <summary>{p.name}</summary>
           <p>{p.description}</p>
           <a href={p.link}>{ p.link.includes('github') ? 'Code' : 'Live Version' }</a>
           <ul>{p.stacks?.map((s) => <li key={s}>{s}</li>)}</ul>
-        </section>
+        </details>
       ))}
       </div>
     </article>
