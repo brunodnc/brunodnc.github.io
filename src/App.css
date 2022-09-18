@@ -47,7 +47,7 @@ nav {
   color: black;
   padding-left:1rem;
   color: white;
-  text-shadow: 1px -0.5px greenyellow;
+  /* text-shadow: 1px -0.5px greenyellow; */
 }
 
 .navlist a:hover {
@@ -72,7 +72,7 @@ nav {
 h1 {
   font-family: monospace;
   font-size:3rem;
-  text-shadow: 2px 2px greenyellow;
+  /* text-shadow: 2px 2px greenyellow; */
   border: transparent;
   color: white;
 }
@@ -80,11 +80,10 @@ h1 {
 
 
 #welcome-section p {
-  text-shadow: 1px 1px greenyellow;
+  /* text-shadow: 1px 1px greenyellow; */
   color: white;
   margin-top: 1rem;
   text-align: center;
-  border: transparent;
 }
 
 main {
@@ -102,16 +101,39 @@ main {
 
 h2 {
   font-family: monospace;
-  font-size:3rem;
+  font-size:4rem;
   text-align: center;
   font-style: normal;
-  text-shadow: 1px 1px greenyellow;
+  /* text-shadow: 1px 1px greenyellow; */
+  color: white;
+  margin-top: 2rem;
+}
+
+.filter-bar {
+  display: flex;
+  width: 50vw;
+}
+
+.filter-btn {
+  border: 2px solid white;
+  width: 100%;
   color: white;
 }
 
+.filter-btn:hover {
+  border: 2px solid greenyellow;
+  color: greenyellow;
+  width: 100%;
+}
+
+.clear-btn {
+  border: 2px solid white;
+  color: white;
+}
 
 .project-tile {
   background-color: transparent;
+  box-sizing: border-box;
   border: white 4px solid;
   min-width: 300px;
   min-height: 30px;
@@ -125,12 +147,13 @@ h2 {
   color: white;
   font-size: 1rem;
   padding: 1rem;
-  border-bottom: white 4px solid;
+  border-bottom: white 3px solid;
   letter-spacing: 1rem;
 }
 
 .project-tile p {
   color: white;
+  padding: 0.5rem;
 }
 
 .project-tile a {
@@ -146,19 +169,23 @@ h2 {
 
 .project-card {
   position: relative;
+  padding: 1rem;
+  padding-bottom: 2rem;
 }
 
 .project-card a {
   position: absolute;
   bottom: 0;
   left: 0;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
 }
 
-.project-card svg {
+.project-card .svgs {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100px;
+  display: inline;
+  bottom: 1rem;
+  right: 10px;
   color: white;
 }
 

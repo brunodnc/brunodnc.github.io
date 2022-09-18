@@ -52,7 +52,7 @@ export const Projects = () => {
             className="filter-btn"
             onClick={(e) => {
               if (filters.indexOf(e.target.id) === -1) {
-                setFilters([...filters, s])
+                setFilters([...filters, s]);
               } else {
                 setFilters(filters.filter((f) => f !== e.target.id));
               }
@@ -67,7 +67,7 @@ export const Projects = () => {
           onClick={() => {
             setFilters([]);
           }}>
-          Clear Filters
+          Clear
         </button>
       </div>
       <div id='projects'>
@@ -78,7 +78,7 @@ export const Projects = () => {
             <p>{p.description}</p>
             <a href={p.link}>{ p.link.includes('github') ? 'Code' : 'Open' }</a>
             <div>
-              {p.stacks?.map((s) => <div key={s}>{generateIcon(s)}</div>)}
+              <ul className="svgs">{p.stacks?.map((s) => <div key={s}>{generateIcon(s)}</div>)}</ul>
             </div>
           </div>
         </details>
