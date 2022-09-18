@@ -139,7 +139,7 @@ const projects = {
             "name": "pokedex-react-testing-library",
             "description": "Unit tests done for a Pokedex React App",
             "link": "https://github.com/brunodnc/projetos/tree/master/trybe/2-front-end/bloco14-testelib/rtl/src/tests",
-            "stack": ["React", "RTL", "Jest"]
+            "stacks": ["React", "RTL", "Jest"]
         },
         {
             "id": 0,
