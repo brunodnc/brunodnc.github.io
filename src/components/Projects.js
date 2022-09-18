@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import projects from '../data/projects';
+import { generateIcon } from "../helper";
+
+
 
 export const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects.projects);
@@ -74,8 +77,9 @@ export const Projects = () => {
           <div className="project-card">
             <p>{p.description}</p>
             <a href={p.link}>{ p.link.includes('github') ? 'Code' : 'Open' }</a>
-            {/* className = 'svgList' */}
-            <ul>{p.stacks?.map((s) => <li key={s}>{s}</li>)}</ul>
+            <div>
+              {p.stacks?.map((s) => <div key={s}>{generateIcon(s)}</div>)}
+            </div>
           </div>
         </details>
       ))}

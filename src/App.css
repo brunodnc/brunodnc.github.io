@@ -154,10 +154,12 @@ h2 {
   left: 0;
 }
 
-.project-card .svgList {
-  position: aboslute;
+.project-card svg {
+  position: absolute;
   bottom: 0;
   right: 0;
+  width: 100px;
+  color: white;
 }
 
 #about {
