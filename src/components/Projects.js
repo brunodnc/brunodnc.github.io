@@ -8,6 +8,7 @@ export const Projects = () => {
 
   useEffect(function getStacksList() {
       const projectStacks = filteredProjects.reduce((stackList, currentProject) => {
+        console.log('currentprojectstacks = ' + currentProject.stacks);
         for (const st of currentProject.stacks) {
           if (stackList.indexOf(st) === -1) {
             stackList.push(st);

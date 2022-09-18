@@ -132,7 +132,7 @@ const projects = {
             "name": "docker-to-do-list",
             "description": "Dockerization of a 'to do list' application",
             "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco19-docker/docker-exercise",
-            "stack": ["Docker"]
+            "stacks": ["Docker"]
         },
         {
             "id": 20,
