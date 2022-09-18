@@ -125,18 +125,12 @@ h2 {
   }
 
 .project-tile a {
-  position:absolute;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
   color: black;
-  background: linear-gradient(35deg, #FFCCCC, greenyellow);
-  border: 0.2rem red solid;
   border-radius: 50%;
   padding: 0.8rem;
-  text-shadow: 2px 0px greenyellow, 2px 2px #FFCCCC
-
-
 }
 
 #about {

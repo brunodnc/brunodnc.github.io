@@ -24,7 +24,7 @@ export const Projects = () => {
     if (!filters.length) {
       setFilteredProjects(projects.projects);
     } else {
-      const filteredProjects = projects.filter(project => {
+      const filteredProjects = projects.projects.filter(project => {
          for (const filter of filters) {
             if (!project.stacks.includes(filter)) {
               return false
