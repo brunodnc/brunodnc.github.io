@@ -75,7 +75,7 @@
             <summary>{p.name}</summary>
             <div className="project-card">
               <p>{p.description}</p>
-              <a href={p.link}>{ p.link.includes('github') ? 'Code' : 'Open' }</a>
+              <a href={p.link} rel="noreferrer" target="_blank">{ p.link.includes('github') ? 'Code' : 'Open' }</a>
               <div>
                 <ul className="svgs">{p.stacks?.map((s) => <div key={s}>{generateIcon(s)}</div>)}</ul>
               </div>
