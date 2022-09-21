@@ -115,14 +115,14 @@ const projects = {
         },
         {
             "id": 17,
-            "name": "Trybe-tunes",
+            "name": "trybe-tunes",
             "description": "A music web application using iTunes's API",
             "link": "https://github.com/brunodnc/projects/tree/3eff5c643eda6f685920062b28a7ac5093df0e0e/trybe/2-front-end/bloco12-ciclo-de-vida/Trybetunes/src",
             "stacks": ["JavaScript", "React", 'CSS']
         },
         {
             "id": 18,
-            "name": "Trybewarts",
+            "name": "trybewarts",
             "description": "A form application that registers students in Trybewarts's school of programming magic, this project was done by me and Caio Alves",
             "link": "https://github.com/brunodnc/projects/tree/c02145d6a3cd3958797ec26de55dc7a77d911ed0/trybe/1-fundamentos/bloco6-responsivity/trybewarts",
             "stacks": ["JavaScript", 'HTML', 'CSS',]

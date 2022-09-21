@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@
   outline: 0;
   vertical-align: baseline;
   background: transparent;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,6 +17,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+a {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
 }
 
 nav {
@@ -30,6 +39,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   z-index:2;
+  font-family: roboto;
 }
 
 .navlist {
@@ -41,9 +51,6 @@ nav {
 }
 
 .navlist a {
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
   color: white;
   padding: 1rem;
   width: 300px;
@@ -58,31 +65,51 @@ nav {
 }
 
 
-
 #welcome-section {
   display:flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height:100vh;
-  background-image: url(https://images.unsplash.com/photo-1612416364638-753a3834455c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
-  background-attachment:fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 95vh;
+  position:relative;
+}
+
+.icons {
+  color: greenyellow;
+  margin-right: 1rem;
+}
+
+#welcome-section p {
+  margin-bottom:2rem;
 }
 
 h1 {
-  font-family: monospace;
+  font-family: roboto;
   font-size:3rem;
   border: transparent;
   color: white;
+  letter-spacing: 0.3rem;
 }
 
 #welcome-section p {
   color: white;
   margin-top: 1rem;
   text-align: center;
+}
+
+.hero-footer {
+  color: white;
+  position: absolute;
+  top: 95%;
+  left: 47%;
+  border-top: 20px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+}
+
+.hero-footer a {
+  color: white;
 }
 
 main {
@@ -98,7 +125,7 @@ main {
 }
 
 h2 {
-  font-family: monospace;
+  font-family: roboto;
   font-size:3rem;
   text-align: center;
   font-style: normal;
@@ -114,16 +141,24 @@ h2 {
   margin-bottom: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.25rem;
+  font-family: roboto;
 }
 
 .filter-btn {
   border: 2px solid white;
+  border-radius: 10px;
   min-width: 80px;
   width: 25%;
   color: white;
 }
 
 .filter-btn:hover {
+  border: 2px solid greenyellow;
+  color: greenyellow;
+}
+
+.green {
   border: 2px solid greenyellow;
   color: greenyellow;
 }
@@ -143,7 +178,7 @@ h2 {
   min-height: 30px;
   width: 50vw;
   margin: 0.5rem;
-  font-family: monospace;
+  font-family: roboto;
   font-weight: bolder;
   }
 
@@ -152,7 +187,7 @@ h2 {
   font-size: 1rem;
   padding: 1rem;
   border-bottom: white 3px solid;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
 
 .project-tile p {
@@ -189,15 +224,16 @@ h2 {
 
 .project-card .svgs {
   position: absolute;
-  display: inline;
+  display: flex;
   bottom: 1rem;
   right: 10px;
   color: white;
+  gap: 0.25rem;
 }
 
 #about {
   padding: 2rem;
-  font-family: monospace;
+  font-family: roboto;
 }
 
 #about h2 {
@@ -205,7 +241,7 @@ h2 {
 }
 
 #about p {
-  font-family: monospace;
+  font-family: roboto;
   line-height: 2rem;
   padding: 1rem;
   color: white;
@@ -227,7 +263,7 @@ footer {
   color: white;
   bottom: 0;
   text-align: justify;
-  font-family: monospace;
+  font-family: roboto;
   font-size: 0.7rem;
   margin: 0 3rem 0 3rem;
   padding-bottom: 1rem;

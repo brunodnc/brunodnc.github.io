@@ -38,6 +38,9 @@
       }
     }, [filters]);  
 
+    const clicked = (s) => {
+
+    }
 
       return (      
       <article id="projects">
@@ -52,8 +55,10 @@
               onClick={(e) => {
                 if (filters.indexOf(e.target.id) === -1) {
                   setFilters([...filters, s]);
+                  e.target.className = 'filter-btn green';
                 } else {
                   setFilters(filters.filter((f) => f !== e.target.id));
+                  e.target.className = 'filter-btn';
                 }
               }}
             >
@@ -65,6 +70,7 @@
             className='clear-btn'
             onClick={() => {
               setFilters([]);
+              document.querySelectorAll('.green').forEach(e => e.classList = 'filter-btn')
             }}>
             Clear
           </button>

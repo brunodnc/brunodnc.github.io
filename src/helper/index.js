@@ -1,4 +1,4 @@
-import { Docker, Gnubash, Javascript, Jest, Mysql, Nodedotjs, Postgresql, ReactJs, DThreeDotjs, Markdown, Redux } from '@icons-pack/react-simple-icons';
+import { Docker, Gnubash, Javascript, Jest, Mysql, Nodedotjs, Postgresql, ReactJs, DThreeDotjs, Markdown, Redux, Html5, CssThree } from '@icons-pack/react-simple-icons';
 
 const generateIcon = (stack) => {
     switch (stack) {
@@ -24,6 +24,10 @@ const generateIcon = (stack) => {
             return <Markdown />;
         case 'Redux':
             return <Redux />;
+        case 'HTML':
+            return <Html5 />;
+        case 'CSS': 
+            return <CssThree />;
         default:
             break;
     }
