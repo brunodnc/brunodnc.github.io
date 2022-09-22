@@ -26,7 +26,7 @@ a {
 }
 
 nav {
-  position:fixed;
+  position:sticky;
   top:0;
   left:0;
   display:flex;
@@ -85,7 +85,7 @@ nav {
 
 h1 {
   font-family: roboto;
-  font-size:3rem;
+  font-size:4rem;
   border: transparent;
   color: white;
   letter-spacing: 0.3rem;
@@ -95,17 +95,20 @@ h1 {
   color: white;
   margin-top: 1rem;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .hero-footer {
   color: white;
   position: absolute;
-  top: 95%;
-  left: 47%;
+  top: 90%;
+  left: auto;
+  right: 47%;
   border-top: 20px solid white;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 20px solid white;
+  padding: 0.4rem;
 }
 
 .hero-footer a {
@@ -121,7 +124,6 @@ main {
   display: flex;
   flex-direction:column;
   align-items: center;
-  padding-top: 1rem;
 }
 
 h2 {
@@ -267,4 +269,22 @@ footer {
   font-size: 0.7rem;
   margin: 0 3rem 0 3rem;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 380px) {
+  .hero-footer {
+    right: 30%;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-footer {
+    right: 38%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-footer {
+    right: 43%;
+  }
 }
