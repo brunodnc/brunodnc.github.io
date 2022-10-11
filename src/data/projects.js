@@ -245,13 +245,41 @@ const projects = {
             "description": "A simple JS function that converts a integer to a roman numeral",
             "link": "https://github.com/brunodnc/projects/blob/master/freeCodeCamp/jsbasic/romannumerals.js",
             "stacks": ['JavaScript']
-        }
+        },
+        {
+            "id": 36,
+            "name": "Talker Manager",
+            "description": "A conference management application, that allows the administrator to register, visualize, search, edit and exclude informations.",
+            "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco22-nodejs/talker-manager",
+            "stacks": ["Node.js", "JavaScript", "Express"]
+        },
+        {
+            "id": 37,
+            "name": "store-manager",
+            "description": "A product sale management system.",
+            "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco23-rest/store-manager",
+            "stacks": ["Node.js", "JavaScript", "Express", "Chai", "Docker"],
+        },
+        {
+            "id": 38,
+            "name": "blogs-api",
+            "description": "A blog's API that manipulates a MySQL database through Sequelize",
+            "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco24-orm-aut/blogs_api",
+            "stacks": ["Node.js", "JavaScript", "Express", "Sequelize", "Docker", "MySQL"],
+        },
+        {
+            "id": 39,
+            "name": "trybesmith",
+            "description": "A medieval items store in the format of an API, that uses Typescript and Node.js",
+            "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco26-typescript/trybesmith",
+            "stacks": ["Node.js", "Typescript", "Express", "Docker", "MySQL"],
+        },
         // {
-        //     "id": 5,
-        //     "name": "",
-        //     "description": "",
-        //     "link": "",
-        //     "stacks": []
+        //     "id": ,
+        //     "name": ,
+        //     "description": ,
+        //     "link": ,
+        //     "stacks": [],
         // },
     ]
   }
