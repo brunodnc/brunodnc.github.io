@@ -28,13 +28,13 @@ const projects = {
         //     "link": "",
         //     "stacks": []
         // },
-        // {
-        //     "id": 5,
-        //     "name": "",
-        //     "description": "",
-        //     "link": "",
-        //     "stacks": []
-        // },
+         {
+             "id": 5,
+             "name": "JIRALIZE beta",
+             "description": "A chrome extension to automate an dauting task from one of my jobs, it reads an e-mail and fills an jira task creation form, it will be more developed, but I should not share sensitive work information on git :)",
+             "link": "https://github.com/brunodnc/chrome-extension-jiralize",
+             "stacks": ["JavaScript", "CSS", "HTML"]
+         },
         {
             "id": 6,
             "name": "guess-the-color",
@@ -274,6 +274,90 @@ const projects = {
             "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco26-typescript/trybesmith",
             "stacks": ["Node.js", "Typescript", "Express", "Docker", "MySQL"],
         },
+        {
+            "id": 40,
+            "name": "trybers-and-dragons",
+            "description": "An class based rpg game to learn class hierarchy",
+            "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco27-poo-solid/trybers-and-dragons",
+            "stacks": ["Node.js", "Typescript", "Express", "Docker", ],
+        },
+        {
+            "id": 41,
+            "name": "trybe-futebol-clube",
+            "description": "API of an informative site about soccer ranks and matches",
+            "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco28-tfc",
+            "stacks": ["TypeScript", "Sequelize"],
+        },
+        {
+            "id": 42,
+            "name": "mongodb-commerce",
+            "description": "Mongodb queries applicable to an e-commerce",
+            "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco29-mongodb/mongodb-commerce",
+            "stacks": ["MongoDB"],
+        },
+        {
+         "id": 43,
+         "name": 'car-shop',
+         "description": "Vehicle rental api using Mongoose",
+         "link": "https://github.com/brunodnc/projects/tree/master/trybe/3-back-end/bloco30-vps-cicd/car-shop",
+         "stacks": ["TypeScript", "Mongoose", "MongoDB"],
+     },
+     {
+         "id": 44,
+         "name": "job-insights",
+         "description": "Python application that analyses data about jobs",
+         "link": "https://github.com/brunodnc/projects/tree/master/trybe/4-cc/bloco32-python/job-insights",
+         "stacks": ["Python"],
+     },
+     {
+         "id": 45,
+         "name": "inventory-report",
+         "description": "Python application that creates specific inventory reports",
+         "link": "https://github.com/brunodnc/projects/tree/master/trybe/4-cc/bloco33-poo/inventory_report",
+         "stacks": ["Python"],
+     },
+     {
+         "id": 46,
+         "name": "tech-news",
+         "description": "A crawler that gets technology news from a webpage",
+         "link": "https://github.com/brunodnc/projects/tree/master/trybe/4-cc/bloco34-network/tech_news",
+         "stacks": ["Python"],
+     },
+     {
+         "id": 47,
+         "name": "ting",
+         "description": "Search engine sketch",
+         "link": "https://github.com/brunodnc/projects/tree/master/trybe/4-cc/bloco36-data-structure/ting",
+         "stacks": ["Python"],
+     },
+     {
+         "id": 48,
+         "name": "restaurant-orders",
+         "description": "Generate business reports to a restaurant",
+         "link": "https://github.com/brunodnc/projects/tree/master/trybe/4-cc/bloco37-data-structure2/restaurant_orders",
+         "stacks": ["Python"],
+     },
+     {
+         "id": 49,
+         "name": "asteroids",
+         "description": "AVOID ASTEROIDS AT ALL COSTS!",
+         "link": "https://github.com/brunodnc/projects/tree/master/java-helsinki/part14-Part14_09.Asteroids",
+         "stacks": ["Java"],
+     },
+     {
+        "id": 50,
+        "name": "savings-calculator",
+        "description": "A calculator for money saving, doing the math for the value per month with the interest",
+        "link": "https://github.com/brunodnc/projects/tree/master/java-helsinki/part14-Part14_03.SavingsCalculator",
+        "stacks": ["Java"],
+    },
+    {
+        "id": 51,
+        "name": 'tic-tac-toe',
+        "description": "The famous game of x'ses and circles",
+        "link": "https://github.com/brunodnc/projects/tree/master/java-helsinki/part13-Part13_13.TicTacToe",
+        "stacks": ["Java"],
+    },
         // {
         //     "id": ,
         //     "name": ,
@@ -281,6 +365,49 @@ const projects = {
         //     "link": ,
         //     "stacks": [],
         // },
+        // {
+        //     "id": ,
+        //     "name": ,
+        //     "description": ,
+        //     "link": ,
+        //     "stacks": [],
+        // },
+        // {
+        //     "id": ,
+        //     "name": ,
+        //     "description": ,
+        //     "link": ,
+        //     "stacks": [],
+        // },
+        // {
+        //     "id": ,
+        //     "name": ,
+        //     "description": ,
+        //     "link": ,
+        //     "stacks": [],
+        // },
+        // {
+        //     "id": ,
+        //     "name": ,
+        //     "description": ,
+        //     "link": ,
+        //     "stacks": [],
+        // },
+        // {
+        //     "id": ,
+        //     "name": ,
+        //     "description": ,
+        //     "link": ,
+        //     "stacks": [],
+        // },
+        // {
+        //     "id": ,
+        //     "name": ,
+        //     "description": ,
+        //     "link": ,
+        //     "stacks": [],
+        // },
+
     ]
   }
 

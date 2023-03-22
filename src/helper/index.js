@@ -1,4 +1,4 @@
-import { Docker, Gnubash, Javascript, Jest, Mysql, Nodedotjs, Postgresql, ReactJs, DThreeDotjs, Markdown, Redux, Html5, CssThree, Express, Chai, Sequelize } from '@icons-pack/react-simple-icons';
+import { Docker, Gnubash, Javascript, Jest, Mysql, Nodedotjs, Postgresql, ReactJs, DThreeDotjs, Markdown, Redux, Html5, CssThree, Express, Chai, Sequelize, Mongodb, Python, Oracle, Eclipseide } from '@icons-pack/react-simple-icons';
 
 const generateIcon = (stack) => {
     switch (stack) {
@@ -28,12 +28,18 @@ const generateIcon = (stack) => {
             return <Html5 />;
         case 'CSS': 
             return <CssThree />;
+        case 'MongoDB':
+            return <Mongodb/ >;
         case 'Express':
             return <Express />;
         case 'Chai':
             return <Chai />;
         case 'Sequelize':
             return <Sequelize />;
+        case 'Python':
+            return <Python />;
+        case 'Java':
+            return <Eclipseide />;
         default:
             break;
     }
