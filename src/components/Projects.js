@@ -5,9 +5,14 @@
 
 
   export const Projects = () => {
-    const [filteredProjects, setFilteredProjects] = useState(projects.projects);
+    const [randomizedProjects, setRandomizedProjects] = useState(projects.projects)
+    const [filteredProjects, setFilteredProjects] = useState(randomizedProjects);
     const [stacks, setStacks] = useState([]);
     const [filters, setFilters] = useState([]);
+
+    useEffect(function randomizeProjects() {
+      setRandomizedProjects(projects.projects.sort(() => Math.random() - 0.5));
+    }, []);
 
     useEffect(function getStacksList() {
         const projectStacks = filteredProjects.reduce((stackList, currentProject) => {
@@ -36,11 +41,7 @@
         });
         setFilteredProjects(filteredProjects)
       }
-    }, [filters]);  
-
-    const clicked = (s) => {
-
-    }
+    }, [filters]);
 
       return (      
       <article id="projects">
